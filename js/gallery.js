@@ -83,15 +83,6 @@ const galleryMarkup = images.map(({ preview, original, description }) => {
 
 galleryContainer.innerHTML = galleryMarkup;
 
-galleryContainer.addEventListener('click', (event) => {
-    event.preventDefault();
-    const isGalleryImage = event.target.classList.contains('gallery-image');
-  
-    if (!isGalleryImage) return;
-  
-    const largeImageURL = event.target.dataset.source;
-    console.log(largeImageURL);
-  });
 
   galleryContainer.addEventListener('click', (event) => {
     event.preventDefault();
